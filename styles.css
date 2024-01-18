@@ -26,6 +26,11 @@
 	background-color: var(--color-third);
 }
 
+.m-1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
 .btn {
 	padding: 0.5rem 1rem;
 	border-radius: 15px;
@@ -201,6 +206,10 @@ nav h1 {
 	padding: 1rem;
 }
 
+.announcements {
+	margin-top: 1rem;
+}
+
 .card {
 	padding: 0.5rem;
 	min-height: 200px;
@@ -219,12 +228,28 @@ nav h1 {
 	display: grid;
 	text-align: center;
 	width: 85%;
-	margin: auto;
 }
 
 .trendings .trending {
 	margin-top: 0.75rem;
 	margin-bottom: 0.75rem;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
+	gap: 0.5rem;
+	text-align: left;
+}
+
+.trendings .trending .bio {
+	grid-column: 2;
+}
+
+.trendings .trending img {
+	width: 3rem;
+	height: auto;
+	align-self: center;
+	grid-row: 1 / span 2;
+	justify-self: end;
 }
 
 .announcement {
@@ -233,8 +258,8 @@ nav h1 {
 }
 
 .card,
-.announcement,
-.trending {
+.announcements,
+.trendings {
 	border-radius: 10px;
 }
 
